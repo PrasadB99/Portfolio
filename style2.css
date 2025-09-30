@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2016/11/09/07/09/babu-1810147_1280.jpg") no-repeat center/cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;            /* vertically center */
+  width: 100%;
+}
+
+.logo {
+  font-size: 25px;
+  color: rgb(239, 98, 28);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.n1 {
+  display: flex;
+  gap: 5px; /* space between links */
+}
+
+.n1 a{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+.n1 a:hover,
+.n1 a.active {
+  color: rgb(239, 98, 28);
+}
+
+/* Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10% 60px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin-right: 40px;
+  border: 3px solid #fff;
+}
+
+.home-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.home-content h1 span {
+  color: rgb(239, 98, 28);
+}
+
+.typing-text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(239, 98, 28);
+  color: #fff;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(239, 98, 28);
+}
+
+/* Info Section */
+.info {
+  padding: 80px 10%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(239, 98, 28);
+}
+
+/* Education */
+.education {
+  padding: 80px 10%;
+  background: rgba(20, 20, 20, 0.7);
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(239, 98, 28);
+}
+
+.edu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Skills */
+.skills {
+  padding: 80px 10%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(239, 98, 28);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  padding: 80px 10%;
+  background: rgba(20, 20, 20, 0.7);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(239, 98, 28);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+form .btn {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-image img {
+    margin: 0 0 20px 0;
+  }
+}
