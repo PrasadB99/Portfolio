@@ -23,6 +23,13 @@
         <a href="#contact">Contact</a>
       </nav>
     </div>
+
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </header>
 
   <!-- Home Section -->
@@ -101,6 +108,16 @@
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
+
+  <script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.querySelector(".n1");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 

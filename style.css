@@ -24,8 +24,8 @@ header {
 
 .container {
   display: flex;
-  justify-content: space-between; /* logo left, nav right */
-  align-items: center;            /* vertically center */
+  justify-content: space-between; 
+  align-items: center;            
   width: 100%;
 }
 
@@ -38,7 +38,7 @@ header {
 
 .n1 {
   display: flex;
-  gap: 5px; /* space between links */
+  gap: 5px; 
 }
 
 .n1 a{
@@ -215,7 +215,35 @@ form .btn {
   width: 100%;
 }
 
-/* Responsive Design */
+
+/* @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-image img {
+    margin: 0 0 20px 0;
+  }
+} */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  margin-right: 5px;
+  cursor: pointer;
+  gap: 5px;
+  position: absolute; 
+  top: 25px;          
+  right: 25px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
@@ -224,4 +252,28 @@ form .btn {
   .home-image img {
     margin: 0 0 20px 0;
   }
+  .n1 {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  .n1 a {
+    margin: 10px 0;
+    border-bottom: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .n1.active {
+    display: flex;
+  }
 }
+
