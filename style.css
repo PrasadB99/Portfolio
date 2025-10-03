@@ -38,7 +38,7 @@ header {
 
 .n1 {
   display: flex;
-  gap: 5px; 
+  gap: 2px; 
 }
 
 .n1 a{
@@ -53,13 +53,15 @@ header {
 .n1 a:hover,
 .n1 a.active {
   color: rgb(239, 98, 28);
+  font-size: 18 px;
+  border-color: white;
 }
 
 /* Home */
 .home {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 100px 10% 60px;
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
@@ -69,7 +71,7 @@ header {
   width: 250px;
   height: auto;
   border-radius: 15px;
-  margin-right: 40px;
+  margin-right: 10px;
   border: 3px solid #fff;
 }
 
