@@ -38,7 +38,7 @@ header {
 
 .n1 {
   display: flex;
-  gap: 2px; 
+  gap: 1px; 
 }
 
 .n1 a{
@@ -53,7 +53,7 @@ header {
 .n1 a:hover,
 .n1 a.active {
   color: rgb(239, 98, 28);
-  font-size: 18 px;
+  font-size: 16px;
   border-color: white;
 }
 
@@ -61,7 +61,7 @@ header {
 .home {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   padding: 100px 10% 60px;
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
@@ -71,13 +71,17 @@ header {
   width: 250px;
   height: auto;
   border-radius: 15px;
-  margin-right: 10px;
+  margin-right: 40px;
   border: 3px solid #fff;
 }
 
 .home-content h1 {
   font-size: 28px;
   margin-bottom: 10px;
+}
+
+.home-content h3{
+  margin-left: 3px;
 }
 
 .home-content h1 span {
@@ -182,9 +186,10 @@ header {
 
 /* Contact */
 .contact {
-  padding: 80px 10%;
+  padding: 150px 10%;
   background: rgba(20, 20, 20, 0.7);
   text-align: center;
+
 }
 
 .contact h2 {
@@ -278,4 +283,3 @@ form .btn {
     display: flex;
   }
 }
-
